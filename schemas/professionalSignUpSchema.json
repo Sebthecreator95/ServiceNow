@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/professionalSignUpSchema.json",
+  "type": "object",
+  "properties": {
+    "professionalId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "email": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 60,
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 20
+    },
+    "firstName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "license": {
+      "type": "boolean",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "availability": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "workType": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "state": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "bio": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    },
+    "specialties": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    },
+    "certifications": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    },
+    "experienceLevel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "professionalId",
+    "email",
+    "password",
+    "firstName",
+    "lastName",
+    "category",
+    "availability",
+    "workType",
+    "state",
+    "city",
+    "bio",
+    "experienceLevel"
+  ]
+}
